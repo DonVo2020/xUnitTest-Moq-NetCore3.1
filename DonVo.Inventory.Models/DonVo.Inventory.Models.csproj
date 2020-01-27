@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="StandardEntityModels\**" />
+    <EmbeddedResource Remove="StandardEntityModels\**" />
+    <None Remove="StandardEntityModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Moonlay.Models" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
